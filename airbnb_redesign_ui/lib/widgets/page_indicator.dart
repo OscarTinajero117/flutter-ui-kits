@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class PageIndicator extends StatelessWidget {
   final int activePage;
-  PageIndicator({this.activePage});
+  PageIndicator({required this.activePage});
 
   @override
   Widget build(BuildContext context) {

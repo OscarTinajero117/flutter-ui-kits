@@ -5,8 +5,8 @@ import 'package:language_learning_ui/constants.dart';
 
 class PrimaryButton extends StatelessWidget {
   final String text;
-  final Function onPressed;
-  PrimaryButton({this.text, this.onPressed});
+  final VoidCallback? onPressed;
+  PrimaryButton({required this.text, this.onPressed});
   @override
   Widget build(BuildContext context) {
     return InkWell(

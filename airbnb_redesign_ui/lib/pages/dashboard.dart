@@ -3,7 +3,7 @@ import 'package:airbnb_redesign_ui/utils/static_data.dart';
 import 'package:airbnb_redesign_ui/widgets/app_bottom_navigation.dart';
 import 'package:airbnb_redesign_ui/widgets/house_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -81,7 +81,7 @@ class Dashboard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         child: Icon(
-                          FlutterIcons.search1_ant,
+                          AntDesign.search1,
                           color: Colors.white,
                         ),
                       )

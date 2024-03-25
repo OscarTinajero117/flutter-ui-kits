@@ -5,7 +5,7 @@ import 'package:real_estate_ui/utils/constants.dart';
 class AuthTab extends StatelessWidget {
   final String active;
   final Function setActive;
-  AuthTab({this.active, this.setActive});
+  AuthTab({required this.active, required this.setActive});
   @override
   Widget build(BuildContext context) {
     return Container(

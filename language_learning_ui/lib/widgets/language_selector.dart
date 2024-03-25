@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:language_learning_ui/constants.dart';
 
@@ -7,7 +7,10 @@ class LanguageSelector extends StatelessWidget {
   final bool isActive;
   final String language;
   final String imagePath;
-  LanguageSelector({this.isActive, this.language, this.imagePath});
+  LanguageSelector(
+      {required this.isActive,
+      required this.language,
+      required this.imagePath});
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -49,7 +52,7 @@ class LanguageSelector extends StatelessWidget {
               Container(
                 child: isActive
                     ? Icon(
-                        FlutterIcons.check_circle_mdi,
+                        MaterialIcons.check_circle,
                         color: Constants.primaryColor,
                       )
                     : SizedBox.shrink(),

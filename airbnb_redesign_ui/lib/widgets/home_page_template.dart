@@ -11,7 +11,8 @@ class HomePageTemplate extends StatelessWidget {
   final String imagePath;
   final String title;
 
-  HomePageTemplate({this.activePage, this.imagePath, this.title});
+  HomePageTemplate(
+      {required this.activePage, required this.imagePath, required this.title});
 
   @override
   Widget build(BuildContext context) {

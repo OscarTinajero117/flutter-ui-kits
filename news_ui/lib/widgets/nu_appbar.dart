@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:news_ui/pages/notifications.dart';
@@ -38,7 +38,7 @@ class NuAppbar extends StatelessWidget {
               Helper.nextScreen(context, Notifications());
             },
             child: Icon(
-              FlutterIcons.bell_sli,
+              SimpleLineIcons.bell,
               size: 20.0,
             ),
           )

@@ -2,5 +2,5 @@ class LanguageModel {
   final String language;
   final String imagePath;
 
-  LanguageModel({this.language, this.imagePath});
+  LanguageModel({required this.language, required this.imagePath});
 }

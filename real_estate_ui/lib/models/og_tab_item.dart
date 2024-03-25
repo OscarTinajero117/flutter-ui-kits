@@ -1,5 +1,5 @@
 class OgTabItem {
   final String title;
 
-  OgTabItem({this.title});
+  OgTabItem({required this.title});
 }

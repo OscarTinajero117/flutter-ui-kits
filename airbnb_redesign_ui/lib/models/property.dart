@@ -4,5 +4,9 @@ class Property {
   final String imagePath;
   final String price;
 
-  Property({this.name, this.description, this.imagePath, this.price});
+  Property(
+      {required this.name,
+      required this.description,
+      required this.imagePath,
+      required this.price});
 }

@@ -6,7 +6,7 @@ import 'package:news_ui/utils/helper.dart';
 
 class MiniNewsCard extends StatelessWidget {
   final News news;
-  MiniNewsCard({this.news});
+  MiniNewsCard({required this.news});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

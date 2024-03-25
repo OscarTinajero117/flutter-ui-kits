@@ -96,7 +96,7 @@ class Store extends StatelessWidget {
                   height: 30.0,
                 ),
                 Flexible(
-                  child: StaggeredGridView.countBuilder(
+                  child: MasonryGridView.count(
                     physics: NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
                     crossAxisCount: 4,
@@ -125,9 +125,10 @@ class Store extends StatelessWidget {
                             ),
                             child: Column(
                               children: [
-                                Expanded(
-                                  child: Image.asset(watches[index].image),
-                                ),
+                                Image.asset(watches[index].image),
+                                // Expanded(
+                                //   child:
+                                // ),
                                 Text(
                                   watches[index].brand,
                                   textAlign: TextAlign.center,
@@ -151,8 +152,8 @@ class Store extends StatelessWidget {
                         ),
                       ),
                     ),
-                    staggeredTileBuilder: (int index) =>
-                        new StaggeredTile.count(2, index.isEven ? 3 : 2),
+                    // staggeredTileBuilder: (int index) =>
+                    //     new StaggeredTile.count(2, index.isEven ? 3 : 2),
                     mainAxisSpacing: 10.0,
                     crossAxisSpacing: 10.0,
                   ),

@@ -3,7 +3,7 @@ import 'package:airbnb_redesign_ui/utils/constants.dart';
 import 'package:airbnb_redesign_ui/utils/helper.dart';
 import 'package:airbnb_redesign_ui/widgets/property_features.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -77,7 +77,7 @@ class SinglePropertyPage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Icon(
-                            FlutterIcons.map_pin_fea,
+                            Feather.map_pin,
                             color: Color.fromRGBO(138, 150, 190, 1),
                           ),
                           SizedBox(

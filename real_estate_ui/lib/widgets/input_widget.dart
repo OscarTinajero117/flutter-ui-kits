@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class InputWidget extends StatelessWidget {
-  final String hintText;
-  final IconData prefixIcon;
+  final String? hintText;
+  final IconData? prefixIcon;
   final double height;
   InputWidget({this.hintText, this.prefixIcon, this.height = 53.0});
   @override

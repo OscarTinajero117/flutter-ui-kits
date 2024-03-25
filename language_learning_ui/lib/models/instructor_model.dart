@@ -3,5 +3,6 @@ class InstructorModel {
   final String image;
   final String occupation;
 
-  InstructorModel({this.name, this.image, this.occupation});
+  InstructorModel(
+      {required this.name, required this.image, required this.occupation});
 }

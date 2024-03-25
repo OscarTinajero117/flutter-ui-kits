@@ -5,10 +5,10 @@ import 'package:google_fonts/google_fonts.dart';
 
 class PrimaryButton extends StatelessWidget {
   // Our primary button widget [to be reused]
-  final Function onPressed;
+  final VoidCallback? onPressed;
   final String text;
 
-  PrimaryButton({this.text, this.onPressed});
+  PrimaryButton({required this.text, this.onPressed});
 
   @override
   Widget build(BuildContext context) {

@@ -5,7 +5,7 @@ import 'package:language_learning_ui/models/course_model.dart';
 
 class CourseCard extends StatelessWidget {
   final CourseModel course;
-  CourseCard({this.course});
+  CourseCard({required this.course});
   @override
   Widget build(BuildContext context) {
     return Container(

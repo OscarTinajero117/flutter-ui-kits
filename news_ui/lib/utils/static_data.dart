@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:news_ui/models/category.dart';
 import 'package:news_ui/models/news.dart';
@@ -10,21 +10,21 @@ class StaticData {
       id: 1,
       title: "Most Popular",
       icon: Icon(
-        FlutterIcons.trending_up_fea,
+        Feather.trending_up,
       ),
     ),
     Category(
       id: 2,
       title: "World",
       icon: Icon(
-        FlutterIcons.globe_ent,
+        Entypo.globe,
       ),
     ),
     Category(
       id: 3,
       title: "Science",
       icon: Icon(
-        FlutterIcons.react_faw5d,
+        FontAwesome5Brands.react,
       ),
     ),
     Category(
@@ -35,12 +35,12 @@ class StaticData {
     Category(
       id: 5,
       title: "Business",
-      icon: Icon(FlutterIcons.handshake_o_faw),
+      icon: Icon(FontAwesome.handshake_o),
     ),
     Category(
       id: 6,
       title: "Sports",
-      icon: Icon(FlutterIcons.soccer_ball_o_faw),
+      icon: Icon(FontAwesome.soccer_ball_o),
     ),
     Category(
       id: 7,
@@ -50,7 +50,7 @@ class StaticData {
     Category(
       id: 8,
       title: "Health",
-      icon: Icon(FlutterIcons.stethoscope_faw5s),
+      icon: Icon(FontAwesome5Solid.stethoscope),
     ),
     Category(
       id: 9,

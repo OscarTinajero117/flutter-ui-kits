@@ -7,11 +7,11 @@ class News {
   final String imagePath;
 
   News({
-    this.id,
-    this.title,
-    this.content,
-    this.timePosted,
-    this.category,
-    this.imagePath,
+    required this.id,
+    required this.title,
+    required this.content,
+    required this.timePosted,
+    required this.category,
+    required this.imagePath,
   });
 }

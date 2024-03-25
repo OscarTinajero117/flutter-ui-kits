@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:real_estate_ui/models/property.dart';
 import 'package:real_estate_ui/utils/constants.dart';
 
 class PropertyCard extends StatelessWidget {
   final Property property;
-  PropertyCard({this.property});
+  PropertyCard({required this.property});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -41,7 +41,7 @@ class PropertyCard extends StatelessWidget {
                         color: Colors.white,
                       ),
                       child: Icon(
-                        FlutterIcons.favorite_mdi,
+                        MaterialIcons.favorite,
                         color: this.property.liked
                             ? Color.fromRGBO(255, 136, 0, 1)
                             : Color(0xFFC4C4C4),
@@ -118,7 +118,7 @@ class PropertyCard extends StatelessWidget {
                 Row(
                   children: [
                     Icon(
-                      FlutterIcons.map_pin_fea,
+                      Feather.map_pin,
                       size: 15.0,
                       color: Color.fromRGBO(255, 136, 0, 1),
                     ),

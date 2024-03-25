@@ -8,7 +8,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class HouseCard extends StatelessWidget {
   final Property house;
-  HouseCard({this.house});
+  HouseCard({required this.house});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:watch_cart_ui/constants.dart';
 
 class HomeOptions extends StatelessWidget {
@@ -18,7 +18,7 @@ class HomeOptions extends StatelessWidget {
                 color: Color.fromRGBO(230, 230, 230, 1),
               ),
             ),
-            child: Icon(FlutterIcons.search_fea),
+            child: Icon(Feather.search),
           ),
         ),
         SizedBox(
@@ -35,7 +35,7 @@ class HomeOptions extends StatelessWidget {
                 color: Color.fromRGBO(230, 230, 230, 1),
               ),
             ),
-            child: Icon(FlutterIcons.md_options_ion),
+            child: Icon(Ionicons.options),
           ),
         ),
         SizedBox(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:repair_service_ui/utils/constants.dart';
 import 'package:repair_service_ui/widgets/home_page_one.dart';
 import 'package:repair_service_ui/widgets/home_page_three.dart';
@@ -35,7 +35,6 @@ class _RequestServiceFlowState extends State<RequestServiceFlow> {
 
     return Scaffold(
       appBar: AppBar(
-        brightness: Brightness.dark,
         elevation: 0.0,
         backgroundColor: Colors.transparent,
         leading: current > 0
@@ -43,7 +42,7 @@ class _RequestServiceFlowState extends State<RequestServiceFlow> {
                 onTap: () {
                   this.prevPage();
                 },
-                child: Icon(FlutterIcons.keyboard_backspace_mdi),
+                child: Icon(MaterialIcons.keyboard_backspace),
               )
             : null,
         iconTheme: IconThemeData(

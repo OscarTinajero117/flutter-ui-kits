@@ -5,5 +5,5 @@ class CourseModel {
   final String name;
   final Color color;
 
-  CourseModel({this.image, this.name, this.color});
+  CourseModel({required this.image, required this.name, required this.color});
 }

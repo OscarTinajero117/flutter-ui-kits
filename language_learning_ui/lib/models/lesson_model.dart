@@ -3,5 +3,6 @@ class LessonModel {
   final String title;
   final String imagePath;
 
-  LessonModel({this.title, this.imagePath, this.duration});
+  LessonModel(
+      {required this.title, required this.imagePath, required this.duration});
 }

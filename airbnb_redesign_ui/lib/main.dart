@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(375, 812),
-      builder: () => MaterialApp(
+      builder: (context, widget) => MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Airbnb Redesign',
         theme: ThemeData(

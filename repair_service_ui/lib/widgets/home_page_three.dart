@@ -7,7 +7,7 @@ class HomePageThree extends StatefulWidget {
   final Function nextPage;
   final Function prevPage;
 
-  HomePageThree({this.nextPage, this.prevPage});
+  HomePageThree({required this.nextPage, required this.prevPage});
 
   @override
   _HomePageThreeState createState() => _HomePageThreeState();
@@ -113,10 +113,10 @@ Widget serviceCard(Map item, String active, Function setActive) {
           children: [
             Align(
               alignment: Alignment.centerLeft,
-              child: SvgPicture.asset(
-                item["icon"],
-                color: isActive ? Colors.white : null,
-              ),
+              child: SvgPicture.asset(item["icon"],
+                  colorFilter: isActive
+                      ? ColorFilter.mode(Colors.white, BlendMode.srcIn)
+                      : null),
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,

@@ -5,5 +5,5 @@ class Category {
   final String title;
   final Widget icon;
 
-  Category({this.id, this.title, this.icon});
+  Category({required this.id, required this.title, required this.icon});
 }

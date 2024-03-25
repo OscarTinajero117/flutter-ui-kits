@@ -1,6 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laundry_app_ui/utils/constants.dart';
 import 'package:laundry_app_ui/widgets/latest_orders.dart';
@@ -22,27 +22,27 @@ class _DashboardState extends State<Dashboard> {
         buttonBackgroundColor: Constants.primaryColor,
         items: [
           Icon(
-            FlutterIcons.ios_home_ion,
+            Ionicons.home,
             size: 30.0,
             color: activeIndex == 0 ? Colors.white : Color(0xFFC8C9CB),
           ),
           Icon(
-            FlutterIcons.map_marker_radius_mco,
+            MaterialCommunityIcons.map_marker_radius,
             size: 30.0,
             color: activeIndex == 1 ? Colors.white : Color(0xFFC8C9CB),
           ),
           Icon(
-            FlutterIcons.plus_ant,
+            AntDesign.plus,
             size: 30.0,
             color: activeIndex == 2 ? Colors.white : Color(0xFFC8C9CB),
           ),
           Icon(
-            FlutterIcons.heart_fea,
+            Feather.heart,
             size: 30.0,
             color: activeIndex == 3 ? Colors.white : Color(0xFFC8C9CB),
           ),
           Icon(
-            FlutterIcons.setting_ant,
+            AntDesign.setting,
             size: 30.0,
             color: activeIndex == 4 ? Colors.white : Color(0xFFC8C9CB),
           ),
@@ -89,7 +89,7 @@ class _DashboardState extends State<Dashboard> {
                             Navigator.pop(context);
                           },
                           child: Icon(
-                            FlutterIcons.keyboard_backspace_mdi,
+                            MaterialIcons.keyboard_backspace,
                             color: Colors.white,
                           ),
                         ),
@@ -103,7 +103,7 @@ class _DashboardState extends State<Dashboard> {
                                     text: "Welcome Back,\n",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .headline6
+                                        .titleLarge!
                                         .copyWith(
                                           color: Colors.white,
                                         ),
@@ -112,7 +112,7 @@ class _DashboardState extends State<Dashboard> {
                                     text: "FlutterPanda!",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .headline6
+                                        .titleLarge!
                                         .copyWith(
                                           color: Colors.white,
                                           fontWeight: FontWeight.w600,

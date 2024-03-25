@@ -14,7 +14,7 @@ class _HomeState extends State<Home> {
   void initState() {
     controller.addListener(() {
       setState(() {
-        currentPage = controller.page.round();
+        currentPage = controller.page!.round();
       });
     });
     super.initState();

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:real_estate_ui/pages/filters.dart';
 import 'package:real_estate_ui/utils/constants.dart';
@@ -56,7 +56,7 @@ class Home extends StatelessWidget {
                       child: InputWidget(
                         height: 44.0,
                         hintText: "Search",
-                        prefixIcon: FlutterIcons.search1_ant,
+                        prefixIcon: AntDesign.search1,
                       ),
                     ),
                     SizedBox(
@@ -85,7 +85,7 @@ class Home extends StatelessWidget {
                         child: Row(
                           children: [
                             Icon(
-                              FlutterIcons.ios_options_ion,
+                              Ionicons.options,
                               color: Colors.white,
                             ),
                             SizedBox(

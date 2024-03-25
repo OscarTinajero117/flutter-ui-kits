@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(375, 812),
-      builder: () => MaterialApp(
+      builder: (ctx, wdg) => MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
@@ -32,7 +32,6 @@ class MyApp extends StatelessWidget {
 }
 
 Route<dynamic> _onGenerateRoute(RouteSettings settings) {
-  Map arguments = settings.arguments;
   switch (settings.name) {
     case "/":
       return MaterialPageRoute(builder: (BuildContext context) {
@@ -44,6 +43,7 @@ Route<dynamic> _onGenerateRoute(RouteSettings settings) {
       });
     case "/watch-details":
       return MaterialPageRoute(builder: (BuildContext context) {
+        final arguments = settings.arguments as Map;
         return WatchDetails(
           watch: arguments["watch"],
           tag: arguments["tag"],

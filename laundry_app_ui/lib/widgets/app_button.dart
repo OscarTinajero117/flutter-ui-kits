@@ -7,10 +7,10 @@ enum ButtonType { PRIMARY, PLAIN }
 
 class AppButton extends StatelessWidget {
   final ButtonType type;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
   final String text;
 
-  AppButton({this.type, this.onPressed, this.text});
+  AppButton({required this.type, this.onPressed, required this.text});
 
   @override
   Widget build(BuildContext context) {

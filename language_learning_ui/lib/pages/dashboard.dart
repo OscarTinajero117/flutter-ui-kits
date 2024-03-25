@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:language_learning_ui/constants.dart';
 import 'package:language_learning_ui/widgets/border_text_field.dart';
@@ -29,24 +29,24 @@ class _DashboardState extends State<Dashboard> {
         items: [
           BottomNavigationBarItem(
             label: "",
-            icon: Icon(FlutterIcons.home_fea),
+            icon: Icon(Feather.home),
           ),
           BottomNavigationBarItem(
             label: "",
             icon: Icon(
-              FlutterIcons.calendar_fea,
+              Feather.calendar,
             ),
           ),
           BottomNavigationBarItem(
             label: "",
             icon: Icon(
-              FlutterIcons.edit_fea,
+              Feather.edit,
             ),
           ),
           BottomNavigationBarItem(
             label: "",
             icon: Icon(
-              FlutterIcons.user_fea,
+              Feather.user,
             ),
           ),
         ],
@@ -68,7 +68,7 @@ class _DashboardState extends State<Dashboard> {
                 ),
                 BorderTextField(
                   prefixIcon: Icon(
-                    FlutterIcons.search_fea,
+                    Feather.search,
                     color: Colors.grey,
                   ),
                   borderRadius: 50.0,

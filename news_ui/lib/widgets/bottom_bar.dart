@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:news_ui/utils/constants.dart';
 
 class BottomBar extends StatelessWidget {
   final Function changeIndex;
   final int currentIndex;
-  BottomBar({this.changeIndex, this.currentIndex});
+  BottomBar({required this.changeIndex, required this.currentIndex});
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
@@ -24,30 +24,30 @@ class BottomBar extends StatelessWidget {
       items: [
         BottomNavigationBarItem(
           label: "",
-          icon: Icon(FlutterIcons.home_ant),
+          icon: Icon(AntDesign.home),
         ),
         BottomNavigationBarItem(
           label: "",
           icon: Icon(
-            FlutterIcons.grid_fea,
+            Feather.grid,
           ),
         ),
         BottomNavigationBarItem(
           label: "",
           icon: Icon(
-            FlutterIcons.search1_ant,
+            AntDesign.search1,
           ),
         ),
         BottomNavigationBarItem(
           label: "",
           icon: Icon(
-            FlutterIcons.bookmark_fea,
+            Feather.bookmark,
           ),
         ),
         BottomNavigationBarItem(
           label: "",
           icon: Icon(
-            FlutterIcons.user_fea,
+            Feather.user,
           ),
         ),
       ],

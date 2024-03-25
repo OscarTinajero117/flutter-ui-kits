@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class WatchDetailImage extends StatelessWidget {
   final String image;
   final String tag;
-  WatchDetailImage({this.image, this.tag});
+  WatchDetailImage({required this.image, required this.tag});
   @override
   Widget build(BuildContext context) {
     return Hero(
@@ -17,7 +17,7 @@ class WatchDetailImage extends StatelessWidget {
             color: Colors.white,
             borderRadius: BorderRadius.circular(16.0),
             border: Border.all(
-              color: Colors.grey[300],
+              color: Colors.grey.shade300,
             ),
           ),
           child: Image.asset(

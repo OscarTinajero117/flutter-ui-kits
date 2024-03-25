@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:language_learning_ui/constants.dart';
 import 'package:language_learning_ui/models/lesson_model.dart';
 
 class LessonCard extends StatelessWidget {
   final LessonModel lesson;
-  LessonCard({this.lesson});
+  LessonCard({required this.lesson});
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -67,7 +67,7 @@ class LessonCard extends StatelessWidget {
               ),
             ),
             Icon(
-              FlutterIcons.play_circle_filled_mdi,
+              MaterialIcons.play_circle_filled,
               color: Constants.primaryColor,
             ),
             SizedBox(

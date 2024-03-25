@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:watch_cart_ui/constants.dart';
 
 class WatchDetailFooter extends StatelessWidget {
@@ -20,7 +20,7 @@ class WatchDetailFooter extends StatelessWidget {
               ),
             ),
             child: Icon(
-              FlutterIcons.ios_heart_empty_ion,
+              Ionicons.heart,
             ),
           ),
         ),

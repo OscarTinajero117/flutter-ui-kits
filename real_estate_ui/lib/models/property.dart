@@ -10,12 +10,12 @@ class Property {
   final bool liked;
 
   Property({
-    this.name,
-    this.description,
-    this.address,
-    this.price,
-    this.imagePath,
-    this.liked,
-    this.propertyTypes,
+    required this.name,
+    required this.description,
+    required this.address,
+    required this.price,
+    required this.imagePath,
+    required this.liked,
+    required this.propertyTypes,
   });
 }

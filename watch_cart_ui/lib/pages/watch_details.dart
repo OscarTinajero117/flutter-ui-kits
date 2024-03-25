@@ -9,7 +9,7 @@ class WatchDetails extends StatefulWidget {
   final Product watch;
   final String tag;
 
-  WatchDetails({this.watch, this.tag});
+  WatchDetails({required this.watch, required this.tag});
 
   @override
   _WatchDetailsState createState() => _WatchDetailsState();

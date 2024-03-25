@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:language_learning_ui/constants.dart';
 
 class BottomBar extends StatelessWidget {
@@ -17,24 +17,24 @@ class BottomBar extends StatelessWidget {
       items: [
         BottomNavigationBarItem(
           label: "",
-          icon: Icon(FlutterIcons.home_fea),
+          icon: Icon(Feather.home),
         ),
         BottomNavigationBarItem(
           label: "",
           icon: Icon(
-            FlutterIcons.calendar_fea,
+            Feather.calendar,
           ),
         ),
         BottomNavigationBarItem(
           label: "",
           icon: Icon(
-            FlutterIcons.edit_fea,
+            Feather.edit,
           ),
         ),
         BottomNavigationBarItem(
           label: "",
           icon: Icon(
-            FlutterIcons.user_fea,
+            Feather.user,
           ),
         ),
       ],

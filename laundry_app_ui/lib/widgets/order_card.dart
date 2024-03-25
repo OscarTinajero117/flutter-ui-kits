@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import 'package:laundry_app_ui/models/order.dart';
@@ -8,7 +8,7 @@ import 'package:laundry_app_ui/utils/helper.dart';
 class OrderCard extends StatelessWidget {
   final Order order;
 
-  OrderCard({this.order});
+  OrderCard({required this.order});
 
   // For formatting date
   final DateFormat formatter = DateFormat("yyyy MM dd");
@@ -100,7 +100,7 @@ Widget getOrderIconWidget(OrderStatus status) {
           color: Color.fromRGBO(221, 40, 81, 0.18),
         ),
         child: Icon(
-          FlutterIcons.loader_fea,
+          Feather.loader,
           color: Color.fromRGBO(221, 40, 81, 1),
         ),
       );
@@ -113,7 +113,7 @@ Widget getOrderIconWidget(OrderStatus status) {
           color: Color.fromRGBO(255, 99, 2, 0.15),
         ),
         child: Icon(
-          FlutterIcons.history_mdi,
+          MaterialIcons.history,
           color: Color.fromRGBO(255, 99, 2, 1),
         ),
       );
@@ -126,7 +126,7 @@ Widget getOrderIconWidget(OrderStatus status) {
           color: Color.fromRGBO(221, 40, 81, 0.18),
         ),
         child: Icon(
-          FlutterIcons.loader_fea,
+          Feather.loader,
           color: Color.fromRGBO(221, 40, 81, 1),
         ),
       );

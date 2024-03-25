@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -27,7 +27,7 @@ class SingleNewsHeader extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Icon(FlutterIcons.chevron_left_fea),
+            Icon(Feather.chevron_left),
             Expanded(
               child: Text(
                 "Jacob Blake: Trump visits Kenosha to back police...",
@@ -42,14 +42,14 @@ class SingleNewsHeader extends StatelessWidget {
               width: 40.0,
             ),
             Icon(
-              FlutterIcons.bookmark_fea,
+              Feather.bookmark,
               size: 20.0,
             ),
             SizedBox(
               width: 20.0,
             ),
             Icon(
-              FlutterIcons.share_2_fea,
+              Feather.share_2,
               size: 20.0,
             )
           ],

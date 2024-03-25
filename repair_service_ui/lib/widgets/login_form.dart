@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:repair_service_ui/pages/request_service_flow.dart';
 import 'package:repair_service_ui/utils/helper.dart';
 import 'package:repair_service_ui/widgets/input_widget.dart';
@@ -13,7 +13,7 @@ class LoginForm extends StatelessWidget {
         children: [
           InputWidget(
             hintText: "Email",
-            suffixIcon: FlutterIcons.mail_oct,
+            suffixIcon: Octicons.mail,
           ),
           SizedBox(
             height: 15.0,

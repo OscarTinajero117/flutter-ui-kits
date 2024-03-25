@@ -8,11 +8,11 @@ class TopicModel {
   final Color color;
   final List<BoxShadow> boxShadow;
   TopicModel({
-    this.time,
-    this.topic,
-    this.points,
-    this.image,
-    this.color,
-    this.boxShadow,
+    required this.time,
+    required this.topic,
+    required this.points,
+    required this.image,
+    required this.color,
+    required this.boxShadow,
   });
 }

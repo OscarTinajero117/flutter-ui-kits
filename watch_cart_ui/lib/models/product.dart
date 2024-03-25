@@ -8,12 +8,12 @@ class Product {
   final String model;
 
   Product({
-    this.name,
-    this.brand,
-    this.description,
-    this.price,
-    this.category,
-    this.image,
-    this.model,
+    required this.name,
+    required this.brand,
+    required this.description,
+    required this.price,
+    required this.category,
+    required this.image,
+    required this.model,
   });
 }

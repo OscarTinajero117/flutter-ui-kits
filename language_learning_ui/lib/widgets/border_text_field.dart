@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class BorderTextField extends StatelessWidget {
-  final String hintText;
+  final String? hintText;
   final bool obscureText;
-  final Icon suffixIcon;
-  final Icon prefixIcon;
+  final Icon? suffixIcon;
+  final Icon? prefixIcon;
   final double borderRadius;
 
   BorderTextField(

@@ -5,7 +5,7 @@ import 'package:real_estate_ui/utils/constants.dart';
 
 class OgTab extends StatefulWidget {
   final List<OgTabItem> items;
-  OgTab({this.items});
+  OgTab({required this.items});
 
   @override
   _OgTabState createState() => _OgTabState();

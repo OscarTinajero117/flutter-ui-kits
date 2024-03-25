@@ -3,7 +3,7 @@ import 'package:news_ui/utils/static_data.dart';
 import 'package:news_ui/widgets/mini_news_card.dart';
 
 class NotificationContent extends StatelessWidget {
-  final Function clear;
+  final VoidCallback? clear;
   NotificationContent({this.clear});
   @override
   Widget build(BuildContext context) {

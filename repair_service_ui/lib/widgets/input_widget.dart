@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class InputWidget extends StatelessWidget {
-  final String hintText;
-  final IconData suffixIcon;
+  final String? hintText;
+  final IconData? suffixIcon;
   final bool obscureText;
 
   InputWidget({this.suffixIcon, this.hintText, this.obscureText = false});

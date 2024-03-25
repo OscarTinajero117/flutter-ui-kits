@@ -4,7 +4,7 @@ import 'package:language_learning_ui/models/instructor_model.dart';
 
 class InstructorCard extends StatelessWidget {
   final InstructorModel instructor;
-  InstructorCard({this.instructor});
+  InstructorCard({required this.instructor});
   @override
   Widget build(BuildContext context) {
     return Stack(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:real_estate_ui/pages/home.dart';
@@ -18,12 +18,12 @@ class RegisterForm extends StatelessWidget {
           children: [
             InputWidget(
               hintText: "Email Address",
-              prefixIcon: FlutterIcons.mail_ant,
+              prefixIcon: AntDesign.mail,
             ),
             SizedBox(height: 15.0),
             InputWidget(
               hintText: "Password",
-              prefixIcon: FlutterIcons.lock_ant,
+              prefixIcon: AntDesign.lock,
             ),
             SizedBox(height: 25.0),
             PrimaryButton(

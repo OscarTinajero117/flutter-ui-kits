@@ -7,7 +7,7 @@ class HomePageOne extends StatefulWidget {
   final Function nextPage;
   final Function prevPage;
 
-  HomePageOne({this.nextPage, this.prevPage});
+  HomePageOne({required this.nextPage, required this.prevPage});
   @override
   _HomePageOneState createState() => _HomePageOneState();
 }
@@ -66,7 +66,7 @@ class _HomePageOneState extends State<HomePageOne> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     double heightFromWhiteBg =
-        size.height - 200.0 - Scaffold.of(context).appBarMaxHeight;
+        size.height - 200.0 - Scaffold.of(context).appBarMaxHeight!;
     return Container(
       height: size.height - kToolbarHeight,
       child: Stack(
@@ -187,7 +187,9 @@ Widget serviceCard(Map item, String active, Function setActive, nextPage) {
           children: [
             SvgPicture.asset(
               item["icon"],
-              color: isActive ? Colors.white : null,
+              colorFilter: isActive
+                  ? ColorFilter.mode(Colors.white, BlendMode.srcIn)
+                  : null,
             ),
             SizedBox(
               height: 5.0,

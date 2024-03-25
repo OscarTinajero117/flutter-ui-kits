@@ -4,7 +4,7 @@ import 'package:airbnb_redesign_ui/utils/helper.dart';
 import 'package:airbnb_redesign_ui/widgets/primary_button.dart';
 import 'package:airbnb_redesign_ui/widgets/register_form.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Register extends StatelessWidget {
@@ -20,7 +20,7 @@ class Register extends StatelessWidget {
             Navigator.pop(context);
           },
           child: Icon(
-            FlutterIcons.keyboard_backspace_mdi,
+            MaterialIcons.keyboard_backspace,
             color: Color.fromRGBO(33, 45, 82, 1),
           ),
         ),
@@ -35,8 +35,8 @@ class Register extends StatelessWidget {
         child: Builder(builder: (BuildContext context) {
           return Container(
             height: _size.height -
-                Scaffold.of(context)
-                    .appBarMaxHeight, //Body height removing appbar height
+                (Scaffold.of(context).appBarMaxHeight ??
+                    10), //Body height removing appbar height
             padding: EdgeInsets.symmetric(horizontal: 24.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

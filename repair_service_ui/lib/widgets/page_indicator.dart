@@ -5,7 +5,7 @@ import 'package:repair_service_ui/utils/constants.dart';
 class PageIndicator extends StatelessWidget {
   final int activePage;
   final bool darkMode;
-  PageIndicator({this.activePage, this.darkMode = true});
+  PageIndicator({required this.activePage, this.darkMode = true});
   @override
   Widget build(BuildContext context) {
     return Row(

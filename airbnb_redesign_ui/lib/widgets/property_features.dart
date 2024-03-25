@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PropertyFeatures extends StatelessWidget {
@@ -8,15 +8,15 @@ class PropertyFeatures extends StatelessWidget {
     return Container(
       child: Row(
         children: [
-          item(FlutterIcons.md_people_ion, "2 Adults"),
+          item(Ionicons.people, "2 Adults"),
           SizedBox(
             width: 10.0,
           ),
-          item(FlutterIcons.bed_faw, "1 Bed"),
+          item(FontAwesome.bed, "1 Bed"),
           SizedBox(
             width: 10.0,
           ),
-          item(FlutterIcons.wifi_fea, "Free Wifi")
+          item(Feather.wifi, "Free Wifi")
         ],
       ),
     );

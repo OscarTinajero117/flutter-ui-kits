@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:repair_service_ui/utils/constants.dart';
 import 'package:repair_service_ui/widgets/input_widget.dart';
@@ -9,7 +9,7 @@ class HomePageTwo extends StatefulWidget {
   final Function nextPage;
   final Function prevPage;
 
-  HomePageTwo({this.nextPage, this.prevPage});
+  HomePageTwo({required this.nextPage, required this.prevPage});
 
   @override
   _HomePageTwoState createState() => _HomePageTwoState();
@@ -99,7 +99,7 @@ class _HomePageTwoState extends State<HomePageTwo> {
           ),
           InputWidget(
             hintText: "Search the problem",
-            suffixIcon: FlutterIcons.search1_ant,
+            suffixIcon: AntDesign.search1,
           ),
           Expanded(
             child: Padding(
@@ -160,7 +160,9 @@ Widget serviceCard(
               alignment: Alignment.centerLeft,
               child: SvgPicture.asset(
                 item["icon"],
-                color: isActive ? Colors.white : null,
+                colorFilter: isActive
+                    ? ColorFilter.mode(Colors.white, BlendMode.srcIn)
+                    : null,
               ),
             ),
             Text(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -31,7 +31,7 @@ class SocialLogins extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    FlutterIcons.facebook_mco,
+                    MaterialCommunityIcons.facebook,
                     color: Colors.white,
                   ),
                   Text(
@@ -106,7 +106,7 @@ class SocialLogins extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    FlutterIcons.twitter_mco,
+                    MaterialCommunityIcons.twitter,
                     color: Colors.white,
                   ),
                   Text(

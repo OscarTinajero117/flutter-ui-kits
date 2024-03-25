@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:laundry_app_ui/utils/constants.dart';
 import 'package:laundry_app_ui/utils/helper.dart';
 import 'package:laundry_app_ui/widgets/app_button.dart';
@@ -45,7 +45,7 @@ class Login extends StatelessWidget {
                                 Navigator.of(context).pop();
                               },
                               child: Icon(
-                                FlutterIcons.keyboard_backspace_mdi,
+                                MaterialIcons.keyboard_backspace,
                                 color: Colors.white,
                               ),
                             ),
@@ -56,7 +56,7 @@ class Login extends StatelessWidget {
                               "Log in to your account",
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline6
+                                  .titleLarge!
                                   .copyWith(
                                     fontWeight: FontWeight.w600,
                                     color: Colors.white,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:news_ui/utils/constants.dart';
 import 'package:news_ui/widgets/single_news_header.dart';
@@ -58,7 +58,7 @@ class SingleNewsPage extends StatelessWidget {
                 child: Transform.rotate(
                   angle: -0.8,
                   child: Icon(
-                    FlutterIcons.send_mdi,
+                    MaterialIcons.send,
                     color: Colors.white,
                   ),
                 ),

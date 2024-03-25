@@ -1,6 +1,6 @@
 import 'package:airbnb_redesign_ui/utils/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class BookingDetails extends StatelessWidget {
@@ -68,7 +68,7 @@ class BookingDetails extends StatelessWidget {
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
-                    FlutterIcons.arrowright_ant,
+                    AntDesign.arrowright,
                     color: Colors.white,
                   ),
                 ),

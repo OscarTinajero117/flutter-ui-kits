@@ -1,7 +1,7 @@
 import 'package:airbnb_redesign_ui/models/bottom_bar_item.dart';
 import 'package:airbnb_redesign_ui/utils/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppBottomNavigation extends StatefulWidget {
@@ -25,35 +25,35 @@ class _AppBottomNavigationState extends State<AppBottomNavigation> {
   void initState() {
     items = [
       BottomBarItem(
-        icon: FlutterIcons.home_fea,
+        icon: Feather.home,
         onPressed: () {
           setActivePage("home");
         },
         key: "home",
       ),
       BottomBarItem(
-        icon: FlutterIcons.heart_ant,
+        icon: AntDesign.heart,
         onPressed: () {
           setActivePage("favorites");
         },
         key: "favorites",
       ),
       BottomBarItem(
-        icon: FlutterIcons.grid_fea,
+        icon: Feather.grid,
         onPressed: () {
           setActivePage("menu");
         },
         key: "menu",
       ),
       BottomBarItem(
-        icon: FlutterIcons.mail_fea,
+        icon: Feather.mail,
         onPressed: () {
           setActivePage("messages");
         },
         key: "messages",
       ),
       BottomBarItem(
-        icon: FlutterIcons.user_ant,
+        icon: AntDesign.user,
         onPressed: () {
           setActivePage("profile");
         },

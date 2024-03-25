@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laundry_app_ui/utils/constants.dart';
 
@@ -41,7 +41,7 @@ class _SingleOrderState extends State<SingleOrder> {
                         Navigator.pop(context);
                       },
                       child: Icon(
-                        FlutterIcons.keyboard_backspace_mdi,
+                        MaterialIcons.keyboard_backspace,
                         color: Colors.white,
                       ),
                     ),
@@ -53,18 +53,22 @@ class _SingleOrderState extends State<SingleOrder> {
                         children: [
                           TextSpan(
                             text: "Details About\n",
-                            style:
-                                Theme.of(context).textTheme.headline6.copyWith(
-                                      color: Colors.white,
-                                    ),
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleLarge!
+                                .copyWith(
+                                  color: Colors.white,
+                                ),
                           ),
                           TextSpan(
                             text: "Order #521",
-                            style:
-                                Theme.of(context).textTheme.headline6.copyWith(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600,
-                                    ),
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleLarge!
+                                .copyWith(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600,
+                                ),
                           ),
                         ],
                       ),
@@ -88,12 +92,14 @@ class _SingleOrderState extends State<SingleOrder> {
                         children: [
                           Text(
                             "Order Details",
-                            style:
-                                Theme.of(context).textTheme.headline6.copyWith(
-                                      color: Color.fromRGBO(74, 77, 84, 1),
-                                      fontSize: 16.0,
-                                      fontWeight: FontWeight.w800,
-                                    ),
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleLarge!
+                                .copyWith(
+                                  color: Color.fromRGBO(74, 77, 84, 1),
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.w800,
+                                ),
                           ),
                           SizedBox(
                             height: 6.0,
@@ -149,12 +155,14 @@ class _SingleOrderState extends State<SingleOrder> {
                         children: [
                           Text(
                             "Your clothes are now washing.",
-                            style:
-                                Theme.of(context).textTheme.headline6.copyWith(
-                                      color: Color.fromRGBO(74, 77, 84, 1),
-                                      fontSize: 16.0,
-                                      fontWeight: FontWeight.w800,
-                                    ),
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleLarge!
+                                .copyWith(
+                                  color: Color.fromRGBO(74, 77, 84, 1),
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.w800,
+                                ),
                           ),
                           SizedBox(
                             height: 5.0,

@@ -4,7 +4,7 @@ import 'package:real_estate_ui/utils/constants.dart';
 class ButtonGroupSpaced extends StatefulWidget {
   final List<String> items;
 
-  ButtonGroupSpaced({this.items});
+  ButtonGroupSpaced({required this.items});
 
   @override
   _ButtonGroupSpacedState createState() => _ButtonGroupSpacedState();

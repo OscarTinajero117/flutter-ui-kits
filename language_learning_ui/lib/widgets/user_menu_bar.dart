@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:new_flutter_icons/new_flutter_icons.dart';
 import 'package:language_learning_ui/constants.dart';
 
 class UserMenuBar extends StatelessWidget {
@@ -39,7 +39,7 @@ class UserMenuBar extends StatelessWidget {
         Spacer(),
         IconButton(
           icon: Icon(
-            FlutterIcons.bell_fea,
+            Feather.bell,
             color: Constants.primaryTextColor,
           ),
           onPressed: () {},
